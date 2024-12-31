@@ -4,12 +4,10 @@ Segue o conteúdo para o arquivo **README.md** que pode ser usado na capa do seu
 
 # Dopinho: Sistema Computacional para Apoio no Controle de Dopagem
 
-![Modelo PROV](prov_model_colab.png)
+![Modelo PROV](PROV.png)
 
 ## Introdução  
-Este repositório apresenta o **Dopinho**, um sistema computacional desenvolvido para apoiar os analistas do **Laboratório Brasileiro de Controle de Dopagem (LBCD)** na interpretação de dados cromatográficos gerados em espectrometria de massas de alta resolução (HPLC-MS). O sistema é projetado para processar grandes volumes de dados, reduzir o tempo de análise e minimizar falhas humanas, utilizando ferramentas modernas de ciência de dados e integração com bases de dados químicas, como o **PubChem**.
-
-A criação do Dopinho é uma contribuição aos professores **Sergio Serra** e **Jorge Zavaleta**, e demonstra uma abordagem interdisciplinar que combina lógica fuzzy, aprendizado de máquina e ciência de dados aplicada ao controle de dopagem.
+Este repositório apresenta um sistema computacional desenvolvido para apoiar os analistas do **Laboratório Brasileiro de Controle de Dopagem (LBCD)** na interpretação de dados cromatográficos gerados em espectrometria de massas de alta resolução (HPLC-MS). O sistema é projetado para processar grandes volumes de dados, reduzir o tempo de análise e minimizar falhas humanas, utilizando ferramentas modernas de ciência de dados e integração com bases de dados químicas, como o **PubChem**.
 
 ## Funcionalidades
 - **Processamento de dados cromatográficos**: Extração e análise de parâmetros de cromatogramas (tempo de retenção, massas moleculares, entre outros).  
@@ -21,7 +19,7 @@ A criação do Dopinho é uma contribuição aos professores **Sergio Serra** e 
 ## Modelo PROV
 Abaixo, encontra-se a representação gráfica do modelo PROV do sistema, detalhando as entidades, atividades e agentes envolvidos no pipeline computacional.
 
-![Modelo PROV](prov_model_colab.png)
+![Modelo PROV](PROV.png)
 
 ## Tecnologias Utilizadas
 - **Python** (versão 3.10.0)
@@ -53,10 +51,9 @@ Este projeto é distribuído sob a licença MIT. Consulte o arquivo LICENSE para
 
 ## Contato
 Para mais informações ou dúvidas, entre em contato:  
-- **Autor**: [Seu Nome]  
-- **E-mail**: [seu-email@exemplo.com]  
-- **LinkedIn**: [Seu LinkedIn](https://linkedin.com/in/seu-perfil)
+- **Autor**: Guy Junior  
+- **E-mail**: guyjunior@iq.ufrj.br 
+- **LinkedIn**: [[Seu LinkedIn](https://linkedin.com/in/seu-perfil)](https://www.linkedin.com/in/guyjuniorti/)
 
 ---
 
-Esse README oferece uma introdução amigável, detalha funcionalidades, e mostra o modelo PROV como destaque. Basta ajustar as informações específicas (nome do repositório, seu contato) antes de fazer o upload no GitHub.
