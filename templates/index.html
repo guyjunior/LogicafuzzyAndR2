@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOPINHO</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Estilo para o overlay de carregamento */
+        #loading {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);  /* Fundo preto com opacidade */
+            z-index: 1000;
+        }
+
+        /* Estilo para o conteúdo de carregamento (o GIF e o texto) */
+        #loading .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);  /* Centraliza o conteúdo */
+            text-align: center;
+            color: white;
+        }
+
+        /* Estilo para o GIF de carregamento redondo */
+        #loading img {
+            border-radius: 50%; /* Torna a imagem circular */
+            width: 300px; /* Define um tamanho fixo para garantir que a imagem permaneça redonda */
+            height: 300px; /* Define a altura para manter as proporções */
+        }
+
+        /* Estilo para garantir que o formulário também fique visível */
+        #form {
+            z-index: 1;
+        }
+
+        /* Aumentar o tamanho das labels para o equivalente de h2 */
+        label.form-label {
+            font-size: 2rem; /* Aumenta o tamanho das labels para o equivalente de um h2 */
+            font-weight: bold;
+        }
+
+        /* Aumentar o tamanho do botão */
+        button.btn {
+            font-size: 1.5rem; /* Tamanho maior do texto do botão */
+            padding: 15px 30px; /* Aumenta o espaçamento interno do botão */
+        }
+    </style>
+
+    <script>
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';  // Mostrar GIF de loading
+            document.getElementById('form').style.display = 'none';  // Esconder o formulário
+            document.getElementById('progress-bar').style.width = '0%';  // Resetar a barra de progresso
+            simulateProgress();  // Simular a barra de progresso
+        }
+
+        function simulateProgress() {
+            let progressBar = document.getElementById('progress-bar');
+            let width = 0;
+            let interval = setInterval(function() {
+                if (width >= 100) {
+                    clearInterval(interval);
+                } else {
+                    width++;
+                    progressBar.style.width = width + '%';
+                    progressBar.innerHTML = width + '%';
+                }
+            }, 300);  // Atualizar a cada 50ms
+        }
+    </script>
+</head>
+<body>
+    <!-- Container do Bootstrap -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Coluna com a imagem e os títulos -->
+            
+            <div class="col-md-6">
+            </br>
+        </br>
+    </br></br>
+</br></br>
+</br>
+</br>
+                <form id="form" method="post" enctype="multipart/form-data" onsubmit="showLoading()">
+                    <div class="mb-3">
+                        <label for="raw_files" class="form-label">AMOSTRA:</label>
+                        <input type="file" id="raw_files" name="raw_files" class="form-control" multiple>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cqcl_file" class="form-label">CQCL:</label>
+                        <input type="file" id="cqcl_file" name="cqcl_file" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cqcl_reinj_file" class="form-label">CQCL Reinj:</label>
+                        <input type="file" id="cqcl_reinj_file" name="cqcl_reinj_file" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cqcl_neg_file" class="form-label">CQN:</label>
+                        <input type="file" id="cqcl_neg_file" name="cqcl_neg_file" class="form-control">
+                    </div>
+                </br>
+            </br>
+                    <button type="submit" class="btn btn-outline-info" align="right">FAREJAR</button>
+                </form>
+
+                <!-- Barra de progresso -->
+                <div class="progress mt-4">
+                    <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <h1 class="mt-3">DOPINHO</h1>
+                <h5>O FAREJADOR DE SUBSTÂNCIAS</h5>
+                 </br>
+                 </br>
+                <img src="{{ url_for('static', filename='Dopinho1.gif') }}" class="img-fluid" alt="Dopinho Image"> 
+                
+            </div>
+
+        </div>
+
+        <!-- Exibir a mensagem com o tempo de execução se existir -->
+        {% if execution_time %}
+        <div class="alert alert-primary mt-4" role="alert">
+            O processamento completo levou {{ execution_time | round(2) }} segundos.
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Div para exibir o GIF de loading -->
+    <div id="loading">
+        <div class="content">
+            <h1>Farejando, por favor aguarde...</h1>
+            <!-- Exibe o GIF de carregamento local -->
+            <img src="{{ url_for('static', filename='loading.gif') }}" alt="Loading GIF" class="img-fluid">
+        </div>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+h5 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
