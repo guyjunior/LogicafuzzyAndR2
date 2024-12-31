@@ -1,0 +1,16 @@
+import pubchempy as pcp  # PubChemPy 1.0.4
+from pymsfilereader import MSFileReader  # pymsfilereader 1.0.1
+import pandas as pd  # pandas 1.5.3
+import matplotlib.pyplot as plt  # matplotlib 3.9.2
+from sklearn.metrics import r2_score  # scikit-learn 1.5.2
+import os  # biblioteca padrão do Python
+import numpy as np  # numpy 1.24.0
+import skfuzzy as fuzz  # scikit-fuzzy 0.5.0
+import timeit  # biblioteca padrão do Python
+import textwrap  # biblioteca padrão do Python
+from rdkit import Chem  # rdkit 2024.3.6
+from rdkit.Chem import Draw  # rdkit 2024.3.6
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox  # matplotlib 3.9.2
+from mpl_toolkits.axes_grid1.inset_locator import inset_axes  # matplotlib 3.9.2
+import pkg_resources  # biblioteca padrão do Python
+#PYTHON VERSION 3.10.0
