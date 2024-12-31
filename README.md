@@ -1,8 +1,4 @@
-Segue o conteúdo para o arquivo **README.md** que pode ser usado na capa do seu projeto no GitHub, com a introdução e a imagem do PROV.
-
----
-
-# Dopinho: Sistema Computacional para Apoio no Controle de Dopagem
+#Sistema Computacional para Apoio no Controle de Dopagem
 
 ![Modelo PROV](PROV.png)
 
