@@ -49,7 +49,7 @@ Este projeto é distribuído sob a licença MIT. Consulte o arquivo LICENSE para
 Para mais informações ou dúvidas, entre em contato:  
 - **Autor**: Guy Junior  
 - **E-mail**: guyjunior@iq.ufrj.br 
-- **LinkedIn**: [[Seu LinkedIn](https://linkedin.com/in/seu-perfil)](https://www.linkedin.com/in/guyjuniorti/)
+- **LinkedIn**: [(https://linkedin.com/in/seu-perfil)](https://www.linkedin.com/in/guyjuniorti/)
 
 ---
 
