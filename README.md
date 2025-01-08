@@ -53,3 +53,5 @@ Para mais informações ou dúvidas, entre em contato:
 
 ---
 
+## Artigo
+Disponível em: https://github.com/guyjunior/LogicafuzzyAndR2/blob/main/Trabalho_Disciplina_Ciencia_de_Dados.pdf
