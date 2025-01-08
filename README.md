@@ -1,7 +1,5 @@
 # Sistema Computacional para Apoio no Controle de Dopagem
 
-![Modelo PROV](PROV.png)
-
 ## Introdução  
 Este repositório apresenta um sistema computacional desenvolvido para apoiar os analistas do **Laboratório Brasileiro de Controle de Dopagem (LBCD)** na interpretação de dados cromatográficos gerados em espectrometria de massas de alta resolução (HPLC-MS). O sistema é projetado para processar grandes volumes de dados, reduzir o tempo de análise e minimizar falhas humanas, utilizando ferramentas modernas de ciência de dados e integração com bases de dados químicas, como o **PubChem**.
 
