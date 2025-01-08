@@ -29,7 +29,7 @@ Abaixo, encontra-se a representação gráfica do modelo PROV do sistema, detalh
 ## Como Executar
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu_usuario/dopinho.git
+   git clone https://github.com/guyjunior/dopinho.git
    ```
 2. Instale as dependências:
    ```bash
